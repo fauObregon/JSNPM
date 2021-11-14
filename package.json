@@ -10,7 +10,6 @@
   "author": "Fausto Obregón <fau.obregon@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.15.0",
     "moment": "^2.29.1"
   },
   "devDependencies": {

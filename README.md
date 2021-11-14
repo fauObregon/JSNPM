@@ -44,9 +44,36 @@
 > npm i [**nombre paquete**] --dry-run
 
 
-## fonrzar la instakacion de un paquete
+## forzar la instakacion de un paquete
 > npm install [**nombre paquete**] -f
 
+## Intallar todo lo que este parametrizado en el archivo *package.json*
+> npm install
 
 ## instalar un paquete con una version especifica
 > npm install [**nombre paquete**]@[**version**]
+-  si colocas *latest* en o que respecta a la version te descargara la ultima versiona estable
+
+## Listar paquetes instalados 
+> npm lits
+
+## muestra la lista de paquetes que esta desactualizdos y su version actual
+> npm outdate
+
+-  Podemos agregar el flag  [--dd] para ver detalles de lo que ocurre en la ejecucion del comando
+    > npm outdate --dd
+
+## Actualizar los paquetes
+> npm update
+
+## eliminar paquetes 
+> npm uninstall [*nombre paquete*]
+
+## eliminar paquete sin borrarlo del package.json
+> npm uninstall [*nombre paquete*] --no-save
+
+
+## para que sirve el simbolo **^** adjunto a las versines de los paquetes
+    Indica que se realice actualizaciones a partir de cambios menores o parches.
+    Si se remplaza por **-** indicaras que solo se realice actualizaciones de parches y/o bugfixes.
+    Para que no se realicen actualizaciones debemos quitar estos simbolos de la version
